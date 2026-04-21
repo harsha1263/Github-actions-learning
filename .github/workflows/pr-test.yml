@@ -15,3 +15,8 @@ jobs:
     steps:
       - name: Run test
         run: echo "PR received! Running tests..."
+      - name: Show trigger info
+        run: |
+          echo "Triggered by: ${{ github.event_name }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
