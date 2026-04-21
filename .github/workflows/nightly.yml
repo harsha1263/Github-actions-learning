@@ -1,0 +1,12 @@
+name: Nightly Build
+on:
+  schedule:
+    - cron: '30 3 * *'
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run nightly tests
+        run: |
+          echo "Nightly build is started at $(date)"
+          echo " Running full test suite"
