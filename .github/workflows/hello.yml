@@ -5,4 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
-        run: echo "Hello, Github actions"
+        run: |
+          echo "Hello, Github action"
+          echo "Create a file"
+          echo "hello" > output.txt
+          cat output.txt
