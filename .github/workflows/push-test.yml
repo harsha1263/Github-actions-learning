@@ -1,0 +1,14 @@
+name: Push-test
+on: 
+  push:
+    branches:
+      - main
+      - develop
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing the filters
+        run: echo "Testing the triggers"
+    
+   
